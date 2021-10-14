@@ -1,0 +1,24 @@
+using System;
+
+namespace test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+           int a,b,sum=0,say=0;
+           Console.WriteLine("a daxil edin");
+          a=int.Parse(Console.ReadLine());
+            Console.WriteLine("b daxil edin");
+          b=int.Parse(Console.ReadLine());
+         
+           for(int i=1;i<100;i++){
+               if(i%a==0 && i%b==0){
+                 say++;
+                 sum+=i;
+               }
+           }
+           Console.WriteLine("Say:"+say.ToString()+" "+"Cem:"+sum.ToString());
+        }
+    }
+}
